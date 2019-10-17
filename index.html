@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To do App</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body background="gym.jpg">
+    <div class="container">
+        <p>
+            <label for="new-task">Add Exercise</label><input id="new-task" type="text"><button>Add</button>
+        </p>
+
+        <h3>To do</h3>
+        <ul id="incomplete-tasks">
+            <li><input type="checkbox"><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            <li class="editMode"><input type="checkbox"><input type="text" value=""><button class="edit">Edit</button><button class="delete">Delete</button></li>
+
+        </ul>
+
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+            <li><input type="checkbox" checked><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+
+
+
+    <nav class="tab" data-selected="2">
+        <div class="icons">
+            <div data-index="1" class="icon fad fa-home"></div>
+            <div data-index="2" class="icon fal fa-plus"></div>
+            <div data-index="3" class="icon fad fa-user fa-swap-opacity"></div>
+        </div>
+        <div class="bar">
+            <div class="cap"></div>
+            <div class="middle">
+                <div class="side"></div>
+                <div class="circle"></div>
+                <div class="side"></div>
+            </div>
+            <div class="cap"></div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
